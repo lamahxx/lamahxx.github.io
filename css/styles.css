@@ -1,0 +1,71 @@
+html,
+body,
+header,
+main,
+#landing {
+  height: 100%;
+}
+.view2,
+#landing {
+  height: 100%;
+}
+@media (max-width: 740px) {
+  html,
+  body,
+  header {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #ad4d15 !important;
+  filter: opacity(50%) !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #92ca0f !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+h2 {
+  letter-spacing: 4px;
+}
+h3 {
+  letter-spacing: 3px;
+  font-size: 1.17rem;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+#carousel {
+  height: 100vh;
+}
+
+section {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Louis Georges café", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+}
+@font-face {
+  font-family: Louis Georges café;
+  src: url("louis-george.ttf");
+}
