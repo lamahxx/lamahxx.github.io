@@ -22,7 +22,7 @@ main,
     height: 300px;
   }
 }
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   #carousel {
     height: 250px;
   }
@@ -63,10 +63,6 @@ h5 {
   width: 80px;
 }
 
-#carousel {
-  height: 100vh;
-}
-
 section {
   overflow: hidden;
 }
@@ -78,5 +74,10 @@ body {
 }
 @font-face {
   font-family: Louis Georges café;
-  src: url("louis-george.ttf");
+  src: url("../font/louis-george.ttf");
+  src: url("../font/louis_george_cafe/Louis\ George\ Cafe.ttf");
+  src: url("../font/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf");
+  src: url("../font/louis_george_cafe/Louis\ George\ Cafe\ Bold\ Italic.ttf");
+  src: url("../font/louis_george_cafe/Louis\ George\ Cafe\ Italic.ttf");
+  src: url("../font/louis_george_cafe/Louis\ George\ Cafe\ Light\ Italic.ttf");
 }
