@@ -17,6 +17,17 @@ main,
   }
 }
 
+@media (max-width: 300px) {
+  #carousel {
+    height: 300px;
+  }
+}
+@media (max-width: 700px) {
+  #carousel {
+    height: 250px;
+  }
+}
+
 .top-nav-collapse {
   background-color: #ad4d15 !important;
   filter: opacity(50%) !important;
