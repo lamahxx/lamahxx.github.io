@@ -68,16 +68,11 @@ section {
 }
 
 body {
-  font-family: "Louis Georges café", sans-serif !important;
+  font-family: "Louis Georges cafe", sans-serif !important;
   font-style: normal !important;
   font-weight: 300 !important;
 }
 @font-face {
-  font-family: Louis Georges café;
-  src: url("../font/louis-george.ttf");
+  font-family: Louis Georges cafe;
   src: url("../font/louis_george_cafe/Louis\ George\ Cafe.ttf");
-  src: url("../font/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf");
-  src: url("../font/louis_george_cafe/Louis\ George\ Cafe\ Bold\ Italic.ttf");
-  src: url("../font/louis_george_cafe/Louis\ George\ Cafe\ Italic.ttf");
-  src: url("../font/louis_george_cafe/Louis\ George\ Cafe\ Light\ Italic.ttf");
 }
