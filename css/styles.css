@@ -79,3 +79,7 @@ body {
   font-family: Louis Georges cafe;
   src: url("../font/louis_george_cafe/Louis\ George\ Cafe.ttf");
 }
+
+.card-header-title {
+  font-size: 1.3rem;
+}
