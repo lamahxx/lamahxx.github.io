@@ -66,6 +66,9 @@ h5 {
 section {
   overflow: hidden;
 }
+#articles {
+  font-size: 1.3rem;
+}
 
 body {
   font-family: "Louis Georges cafe", sans-serif !important;
