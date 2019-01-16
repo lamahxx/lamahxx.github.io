@@ -10,7 +10,7 @@ main,
   height: 100%;
 }
 #landing {
-  background-image: url("clarabg.jpg");
+  background-image: url("../clarabg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
