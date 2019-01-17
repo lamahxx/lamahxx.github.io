@@ -90,7 +90,3 @@ body {
 .card-header-title {
   font-size: 1.3rem;
 }
-#theatre,
-#photos_videos {
-  display: none;
-}

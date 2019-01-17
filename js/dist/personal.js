@@ -6,9 +6,3 @@ $(document).ready(function() {
       .removeClass("active");
   });
 });
-
-$(document).ready(function() {
-  $("#theatre_tag").click(function() {
-    document.getElementById(photos_videos).style.display = "contents";
-  });
-});
