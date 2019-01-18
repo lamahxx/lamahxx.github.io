@@ -100,3 +100,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.pgradient {
+  background-image: linear-gradient(-90deg, #1da1f7, #8fd5f1);
+}
