@@ -623,15 +623,14 @@
       new WOW().init();
     </script>
     <script text="text/javascript">
-    var folder = "/galerie/";
-    var urladd = "/tree/master";
-    var test = "/galerie/";
+    var folder = "/tree/master/galerie";
+ 
     $.ajax({
       url : folder,
       success: function(data){
         $(data).find("a").attr("href", function (i, val) {
           if( val.match(/\.(jpe?g|png|gif)$/)){
-            $("body").append("<img src='"+ url + urladd +test + val +"'>");
+            $("body").append("<img src='"+ folder + val +"'>");
           }
         });
       }
