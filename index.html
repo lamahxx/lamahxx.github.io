@@ -624,10 +624,10 @@
     </script>
     <script text="text/javascript">
 
-    var folder = "/tree/master/galerie";
+    var folder = "https://github.com/lamahxx/lamahxx.github.io/blob/master/galerie/";
     
     $.ajax({
-      url = "https://github.com/lamahxx/lamahxx.github.io/blob/master",
+      
       url : folder,
       success: function(data){
         $(data).find("a").attr("href", function (i, val) {
