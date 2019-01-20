@@ -623,21 +623,12 @@
       new WOW().init();
     </script>
     <script text="text/javascript">
-
-    var folder = "https://github.com/lamahxx/galerie";
-
-    $.ajax({
-      
-      url : folder,
-      success: function(data){
-        $(data).find("a").attr("href", function (i, val) {
-          if( val.match(/\.(jpe?g|png|gif)$/)){
-            $("body").append("<img src='"+ folder + val +"'>");
-          
-          }
-        });
-      }
-    });
+    var i;
+    var size = 20;
+    var url = "https://lamahxx.github.io/galerie/clara_lefort";
+    for (i= 0; i < size; i++){
+          $("body").append("<img src='"+url + i + ".jpg" +  "'>");
+        }
     </script>
     <script src="js/dist/personal.js"></script>
   </body>
