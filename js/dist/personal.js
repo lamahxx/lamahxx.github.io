@@ -14,8 +14,8 @@ function UrlExists(fullUrl) {
     if (xhr.readyState === 4) {
       if (xhr.status != 404) {
         $("#theatre").append("<img src='" + fullUrl + "'>");
-        xhr.send(null);
       }
     }
   };
+  xhr.send(null);
 }
