@@ -656,13 +656,12 @@
     for (i= 0; i < size; i++){
       var fullUrl = url + i + ".jpg";
       function UrlExists(fullUrl) {
-        var http = new XMLHttpRequest();
-      http.open('HEAD', url, false);
-    http.send();
-    if (http.status != 404){
+        var https = new XMLHttpsRequest();
+      https.open('HEAD', url, false);
+    https.send();
+    if (https.status != 404){
       $("#theatre").append("<img src='"+fullUrl+"'>");
     }
-    
     else{
      window.location.reload();
 }
