@@ -52,13 +52,13 @@
                   >Accueil <span class="sr-only">(current)</span></a
                 >
               </li>
-              <li id ="theatre_tag" class="nav-item">
+              <li  class="nav-item">
                 <a class="nav-link" href="#theatre">Théatre/Stand-up</a>
               </li>
-              <li id ="theatre_tag" class="nav-item">
+              <li  class="nav-item">
                 <a class="nav-link" href="#photos_videos">Photos/Videos</a>
               </li>
-              <li id ="theatre_tag" class="nav-item">
+              <li  class="nav-item">
                 <a class="nav-link" href="#bio">Bio</a>
               </li>
             </ul>
@@ -146,14 +146,14 @@
     <!-- /Page d'accueil -->
 
     <!--Bio-->
-  <section>
+  <section id="bio">
   <div class="container">
     <div class="row">
       <div class=col-6>
         <img class="img-fluid" src="galerie/clara_lefort16.jpg" />
       </div>
       <div class="col-6">
-        <p class="bio">
+        <p>
             Clara Lefort est une jeune actrice et auteur de spectacle. 
             En parallèle de l’obtention d’un Master en droit privé à la Sorbonne, elle se consacre à la création théâtrale où elle cherchera d'autres mediums pour explorer avec humour les contrats qui régissent les relations humaines. 
             Elle se forme au Conservatoire Claude Debussy, aux Cours Simon puis aux Cours Florent. 
@@ -256,8 +256,6 @@
       
 
       <!--Galerie Video-->
-      
-          
             <div class="col">
                 <div class="row mb-5">
                     <div class="col-12 col-md-12 my-2">
@@ -656,12 +654,9 @@
       var size = 20;
       var url = "https://lamahxx.github.io/galerie/clara_lefort";
       for (i= 0; i < size; i++){
-        try{
           var fullUrl = url + i + ".jpg";
           UrlExists(fullUrl);
         }
-        catch(err){}
-      }
       </script>
   </body>
 </html>
