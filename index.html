@@ -654,16 +654,13 @@
     var size = 20;
     var url = "https://lamahxx.github.io/galerie/clara_lefort";
     for (i= 0; i < size; i++){
-      
-         
-         
-      
-      function UrlExists(url) {
+      var fullUrl = url + i + ".jpg";
+      function UrlExists(fullUrl) {
         var http = new XMLHttpRequest();
       http.open('HEAD', url, false);
     http.send();
     if (http.status != 404){
-      $("#theatre").append("<img src='"+url + i + ".jpg" +  "'>");
+      $("#theatre").append("<img src='"+fullUrl+"'>");
     }
     
     else{
