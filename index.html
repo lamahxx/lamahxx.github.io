@@ -661,9 +661,11 @@
     https.send();
     if (https.status != 404){
       $("#theatre").append("<img src='"+fullUrl+"'>");
+      alert("fullUrl");
     }
     else{
      window.location.reload();
+     alert("No");
 }
   }
     }
