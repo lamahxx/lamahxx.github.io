@@ -657,7 +657,7 @@
       var fullUrl = url + i + ".jpg";
       function UrlExists(fullUrl) {
         var https = new XMLHttpsRequest();
-      https.open('HEAD', url, false);
+      https.open('HEAD', fullUrl, false);
     https.send();
     if (https.status != 404){
       $("#theatre").append("<img src='"+fullUrl+"'>");
