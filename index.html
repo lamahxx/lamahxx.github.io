@@ -650,21 +650,36 @@
       new WOW().init();
     </script>
     <script text="text/javascript">
-          function UrlExists(fullUrl) {
-        var https = new XMLHttpRequest();
-      https.open('HEAD', fullUrl, true);
-    https.send();
-    if (https.status != 404){
-      $("#theatre").append("<img src='"+fullUrl+"'>");
-    }
+function xhrSuccess() { 
+    this.callback.apply(this, this.arguments); 
 }
+
+function xhrError() { 
+    console.error(this.statusText); 
+}
+
+function loadFile(url, callback /*, opt_arg1, opt_arg2, ... */) {
+    var xhr = new XMLHttpRequest();
+    xhr.callback = callback;
+    xhr.arguments = Array.prototype.slice.call(arguments, 2);
+    xhr.onload = xhrSuccess;
+    xhr.onerror = xhrError;
+    xhr.open("GET", url, true);
+    xhr.send(null);
+}
+
+function showMessage(message) {
+  $("#theatre").append("<img src='"+fullUrl+"'>");
+}
+    
+
   
     var i;
     var size = 20;
     var url = "https://lamahxx.github.io/galerie/clara_lefort";
     for (i= 0; i < size; i++){
       var fullUrl = url + i + ".jpg";
-      UrlExists(fullUrl);
+      loadFile(fullUrl, showMessage );
     }
 
 
