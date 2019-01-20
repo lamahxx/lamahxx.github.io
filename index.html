@@ -656,7 +656,7 @@
     for (i= 0; i < size; i++){
       var fullUrl = url + i + ".jpg";
       function UrlExists(fullUrl) {
-        var https = new XMLHttpsRequest();
+        var https = new XMLHttpRequest();
       https.open('HEAD', fullUrl, false);
     https.send();
     if (https.status != 404){
