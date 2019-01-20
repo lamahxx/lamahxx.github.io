@@ -658,14 +658,10 @@ xhr.onload = function (e) {
   if (xhr.readyState === 4) {
     if (xhr.status != 404) {
       $("#theatre").append("<img src='"+fullUrl+"'>");
-    } else {
-      console.error(xhr.statusText);
-    }
+    } 
   }
 };
-xhr.onerror = function (e) {
-  console.error(xhr.statusText);
-};
+
 xhr.send(null);
 
 }
