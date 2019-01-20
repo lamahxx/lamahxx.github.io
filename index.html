@@ -652,7 +652,7 @@
     <script text="text/javascript">
           function UrlExists(fullUrl) {
         var https = new XMLHttpRequest();
-      https.open('HEAD', fullUrl, false);
+      https.open('HEAD', fullUrl, true);
     https.send();
     if (https.status != 404){
       $("#theatre").append("<img src='"+fullUrl+"'>");
