@@ -1,6 +1,7 @@
 html,
 body,
 header,
+main,
 #landing {
   height: 100%;
 }
@@ -13,9 +14,6 @@ header,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-main {
-  height: 50%;
 }
 
 @media (max-width: 740px) {
