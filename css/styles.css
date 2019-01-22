@@ -105,3 +105,6 @@ body {
   background-image: -webkit-linear-gradient(120deg, #494e4b 0, #66747b 100%);
   background-image: linear-gradient(120deg, #494e4b 0, #66747b 100%);
 }
+.pills-text-color a {
+  color: black;
+}
