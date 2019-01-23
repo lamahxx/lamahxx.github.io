@@ -5,10 +5,7 @@ main,
 #landing {
   height: 100%;
 }
-.view2,
-#landing {
-  height: 100%;
-}
+
 #landing {
   background-image: url("../clarabg.jpg");
   background-repeat: no-repeat;
